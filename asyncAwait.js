@@ -21,6 +21,18 @@ function processRequest(response) {
     })
 }
 
+// async await is nothing but synctactical sugar on promises
+// without async await this is how you would write the searchEngine function
+
+// makeRequest(input).then((response) => {
+//     console.log('making the request')
+//     return processRequest(response)
+// }).then((processedResponse) => {
+//     console.log(processedResponse)
+// }).catch((err) => {
+//     console.log(err)
+// })
+
 // function is async meaning it will wait for data
 // utilizes try (successes) & catch (errors)
 // above functions are called with await
